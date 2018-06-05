@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { AbstractService } from '../../../services/abstract.service';
 import { ListComponent } from '../list/list.component';
 import { HelperFunctions } from '../../util/helper-functions';
 
@@ -14,7 +13,7 @@ export class CrudInterfaceComponent implements OnInit {
   private listitems;
   private entityName;
 
-  constructor(private service: AbstractService) { }
+  constructor() { }
 
   ngOnInit() {
     this.listitems = HelperFunctions.createDummyTest(undefined);
